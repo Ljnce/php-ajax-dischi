@@ -7,17 +7,17 @@
         <script src="https://kit.fontawesome.com/4cd7baf8bb.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js"></script>
-        <link rel="stylesheet" href="public/css/style.css">
+        <link rel="stylesheet" href="public/css/app.css">
     </head>
     <body>
 
 
-    <!-- ++++++++   Test con metodo senza utilizzo di Ajax e Server.php +++++++++
+    <!-- ++++++++   Test con metodo senza utilizzo di Ajax e Server.php +++++++++ -->
          <?php
             include 'data.php';
         ?>
 
-    Con ciclo foreach
+    <!-- Con ciclo foreach
         <?php foreach ($playlist as $key => $album) { ?>
             <div class="card">
                 <img src=" <?php echo $album['poster']; ?> ">
@@ -25,9 +25,9 @@
                 <p> <?php echo $album['author']; ?> </p>
                 <small> <?php echo $album['year']; ?> </small>
             </div>
-        <?php } ?>
+        <?php } ?> -->
 
-     Con ciclo for
+     <!-- Con ciclo for
         <?php for ($i=0; $i < count($playlist) ; $i++) { ?>
             <?php $album = $playlist[$i]; ?>
             <div class="card">
@@ -36,15 +36,23 @@
                 <p> <?php echo $album['author']; ?> </p>
                 <small> <?php echo $album['year']; ?> </small>
             </div>
-        <?php } ?>
-     +++++++++++++    Fine Test +++++++++++ -->
+        <?php } ?> -->
 
 
-        <script id="template" type="text/x-handlebars-template">
+
+
+    <div class="container">
+
+    </div>
+
+        <script id="template-playlist" type="text/x-handlebars-template">
             <img src="{{img}}">
+            <h2> {{titolo}} </h2>
+            <p> {{autore}} </p>
+            <small> {{anno}} </small>
         </script>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="public/js/app.js" charset="utf-8"></script>
+        <script src="src/js/app.js" charset="utf-8"></script>
     </body>
 </html>
