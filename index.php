@@ -11,22 +11,23 @@
     </head>
     <body>
 
-    <!-- Test con metodo senza utilizzo di Ajax e Server.php -->
-        <?php
+
+    <!-- ++++++++   Test con metodo senza utilizzo di Ajax e Server.php +++++++++
+         <?php
             include 'data.php';
         ?>
 
-    <!-- Con ciclo foreach -->
-        <!-- <?php foreach ($playlist as $key => $album) { ?>
+    Con ciclo foreach
+        <?php foreach ($playlist as $key => $album) { ?>
             <div class="card">
                 <img src=" <?php echo $album['poster']; ?> ">
                 <h2> <?php echo $album['title']; ?> </h2>
                 <p> <?php echo $album['author']; ?> </p>
                 <small> <?php echo $album['year']; ?> </small>
             </div>
-        <?php } ?> -->
+        <?php } ?>
 
-    <!-- Con ciclo for -->
+     Con ciclo for
         <?php for ($i=0; $i < count($playlist) ; $i++) { ?>
             <?php $album = $playlist[$i]; ?>
             <div class="card">
@@ -35,8 +36,8 @@
                 <p> <?php echo $album['author']; ?> </p>
                 <small> <?php echo $album['year']; ?> </small>
             </div>
-
         <?php } ?>
+     +++++++++++++    Fine Test +++++++++++ -->
 
 
         <script id="template" type="text/x-handlebars-template">
