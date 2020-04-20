@@ -39,17 +39,30 @@
         <?php } ?> -->
 
 
+    <header>
+        <div class="head">
 
+        </div>
+    </header>
 
-    <div class="container">
+    <main>
+        <div class="container">
+            <div class="cards">
+                <ul>
 
-    </div>
+                </ul>
+            </div>
+
+        </div>
+    </main>
 
         <script id="template-playlist" type="text/x-handlebars-template">
-            <img src="{{img}}">
-            <h2> {{titolo}} </h2>
-            <p> {{autore}} </p>
-            <small> {{anno}} </small>
+            <li>
+                <img src="{{img}}">
+                <h2> {{titolo}} </h2>
+                <p> {{autore}} </p>
+                <small> {{anno}} </small>
+            </li>
         </script>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

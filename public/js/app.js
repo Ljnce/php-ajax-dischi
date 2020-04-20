@@ -96,7 +96,7 @@
 var source = $("#template-playlist").html();
 var template = Handlebars.compile(source);
 $.ajax({
-  url: "http://localhost:8888/Boolean/Esercizi%20php/php-ajax-dischi/php-ajax-dischi/server.php",
+  url: "server.php",
   method: 'GET',
   success: function success(data) {
     var dati = JSON.parse(data);
@@ -111,7 +111,7 @@ $.ajax({
         anno: dato.year
       };
       var templateFinale = template(infoPlaylist);
-      $('.container').append(templateFinale);
+      $('.container .cards ul').append(templateFinale);
     }
   },
   error: function error() {
