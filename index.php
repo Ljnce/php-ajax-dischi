@@ -41,7 +41,13 @@
 
     <header>
         <div class="head">
-
+            <!-- <select class="list-type" name="">
+                <option value="">Scegli un genere</option>
+                <option value="pop">Pop</option>
+                <option value="rock">Rock</option>
+                <option value="jazz">Jazz</option>
+                <option value="metal">Metal</option>
+            </select> -->
         </div>
     </header>
 

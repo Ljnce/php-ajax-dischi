@@ -35,8 +35,8 @@
 
 .container .cards ul {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .container .cards ul li {
@@ -49,14 +49,17 @@
   align-items: center;
   list-style: none;
   background-color: #f28400;
+  margin: 20px 20px;
 }
 
 .container .cards ul li img {
   height: 150px;
+  margin-bottom: 10px;
 }
 
 .container .cards ul li h2 {
   font-size: 15px;
+  margin-bottom: 10px;
 }
 
 /* FOOTER */
