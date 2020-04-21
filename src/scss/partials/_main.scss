@@ -1,6 +1,5 @@
 .container-ajax {
     width: 100vw;
-    min-height: 100vh;
     background-color: black;
     @include centerPosition();
     .cards {
@@ -10,14 +9,14 @@
         .card {
             @include size();
             @include centerPosition();
-            border: 1px solid #f28400;
+            border: 1px solid $primary_color;
             flex-direction: column;
             align-items: center;
             background-color: black;
-            color: #f28400;
+            color: $primary_color;
             margin: 20px 20px;
             &:hover{
-                background-color: #f28400;;
+                background-color: $primary_color;
                 color: black;
                 color: white;
                 border-color: white;
@@ -45,15 +44,15 @@
         flex-wrap: wrap;
         .card-php {
             @include size();
-            border: 1px solid #f28400;
-            color: #f28400;
+            border: 1px solid $primary_color;
+            color: $primary_color;
             @include centerPosition();
             flex-direction: column;
             align-items: center;
             background-color: black;
             margin: 20px 20px;
             &:hover{
-                background-color: #f28400;;
+                background-color: $primary_color;
                 color: white;
                 border-color: white;
                 cursor: pointer;
@@ -67,4 +66,7 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 768px){
 }

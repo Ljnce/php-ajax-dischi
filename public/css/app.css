@@ -18,9 +18,13 @@
   height: 70px;
   width: 100vw;
   background-color: black;
-  flex-direction: row;
   display: flex;
   justify-content: center;
+  position: fixed;
+}
+
+.container-head.black {
+  border-bottom: 1px solid #f28400;
 }
 
 .container-head .head {
@@ -34,11 +38,21 @@
   height: 60px;
 }
 
+@media screen and (max-width: 768px) {
+  .container-head {
+    height: 100px;
+  }
+
+  .container-head .head {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
 /* MAIN */
 
 .container-ajax {
   width: 100vw;
-  min-height: 100vh;
   background-color: black;
   display: flex;
   justify-content: center;

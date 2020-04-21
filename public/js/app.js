@@ -136,6 +136,14 @@ $('.music-type-ajax').change(function () {
       }
     });
   }
+}); //Header scroll
+
+$(document).on('scroll', function () {
+  if ($(window).scrollTop() > 30) {
+    $('.container-head').addClass('black');
+  } else {
+    $('.container-head').removeClass('black');
+  }
 });
 
 /***/ }),
