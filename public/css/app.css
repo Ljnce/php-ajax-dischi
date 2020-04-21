@@ -31,15 +31,12 @@
 
 .container .cards {
   width: 80%;
-}
-
-.container .cards ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.container .cards ul li {
+.container .cards .card {
   height: 300px;
   width: 200px;
   border: 1px solid black;
@@ -52,12 +49,12 @@
   margin: 20px 20px;
 }
 
-.container .cards ul li img {
+.container .cards .card img {
   height: 150px;
   margin-bottom: 10px;
 }
 
-.container .cards ul li h2 {
+.container .cards .card h2 {
   font-size: 15px;
   margin-bottom: 10px;
 }

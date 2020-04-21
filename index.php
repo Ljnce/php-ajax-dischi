@@ -41,34 +41,32 @@
 
     <header>
         <div class="head">
-            <!-- <select class="list-type" name="">
-                <option value="">Scegli un genere</option>
-                <option value="pop">Pop</option>
-                <option value="rock">Rock</option>
-                <option value="jazz">Jazz</option>
-                <option value="metal">Metal</option>
-            </select> -->
+                <select class="list-type" name="">
+                    <option value="">Scegli un genere</option>
+                    <option value="pop">Pop</option>
+                    <option value="rock">Rock</option>
+                    <option value="jazz">Jazz</option>
+                    <option value="metal">Metal</option>
+            </select>
         </div>
     </header>
 
     <main>
         <div class="container">
             <div class="cards">
-                <ul>
 
-                </ul>
             </div>
 
         </div>
     </main>
 
         <script id="template-playlist" type="text/x-handlebars-template">
-            <li>
+            <div class="card" data-music='{{value}}'>
                 <img src="{{img}}">
                 <h2> {{titolo}} </h2>
                 <p> {{autore}} </p>
                 <small> {{anno}} </small>
-            </li>
+            </div>
         </script>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

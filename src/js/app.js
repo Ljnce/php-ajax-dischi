@@ -13,13 +13,32 @@ $.ajax({
                 img: dato.poster,
                 titolo: dato.title,
                 autore: dato.author,
-                anno: dato.year
+                anno: dato.year,
+                value: dato.value
             }
             var templateFinale = template(infoPlaylist)
-            $('.container .cards ul').append(templateFinale);
+            $('.container .cards').append(templateFinale);
         }
     },
     error: function(){
              alert('errore');
+    }
+});
+
+//Seleziona tipo di musica
+$('.list-type').change(function(){
+    var selectedMusicType = $(this).val();
+    if (selectedMusicType == "") {
+        $('.card').show();
+    } else {
+        $('.card').each(function(){
+        var thisMusicType = $(this).attr('data-music');
+        console.log(thisMusicType);
+           if (selectedMusicType.toLowerCase() == thisMusicType.toLowerCase()) {
+                $(this).show();
+            } else {
+                $(this).hide();
+            }
+        })
     }
 });
