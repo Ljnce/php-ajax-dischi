@@ -36,19 +36,19 @@
             <?php
                include 'data.php';
            ?>
-           <?php $playlist_php = $playlist['php']; ?>
-           <?php foreach ($playlist_php as $key => $value) { ?>
-               <div class="container-php">
-                   <div class="cards-php">
+           <div class="container-php">
+                <div class="cards-php">
+                    <?php $playlist_php = $playlist['php']; ?>
+                    <?php foreach ($playlist_php as $key => $value) { ?>
                        <div class="card-php">
                             <img src=" <?php echo $value['poster']; ?> ">
                             <h2> <?php echo $value['title']; ?> </h2>
                             <p> <?php echo $value['author']; ?> </p>
                             <small> <?php echo $value['year']; ?> </small>
                         </div>
-                    </div>
+                   <?php } ?>
                 </div>
-           <?php } ?>
+            </div>
 
            <!-- Alternativa con ciclo for e non foreach
               <?php $playlist_php = $playlist['php']; ?>
