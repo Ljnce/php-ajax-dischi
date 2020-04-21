@@ -14,9 +14,24 @@
 
 /* HEADER */
 
-.head {
+.container-head {
   height: 70px;
+  width: 100vw;
   background-color: black;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+}
+
+.container-head .head {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-head .head .head-sx img {
+  height: 60px;
 }
 
 /* MAIN */
@@ -52,6 +67,8 @@
 .container-ajax .cards .card:hover {
   background-color: #f28400;
   color: black;
+  color: white;
+  border-color: white;
   cursor: pointer;
 }
 
@@ -94,7 +111,8 @@
 
 .container-php .cards-php .card-php:hover {
   background-color: #f28400;
-  color: black;
+  color: white;
+  border-color: white;
   cursor: pointer;
 }
 

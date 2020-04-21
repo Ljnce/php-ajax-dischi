@@ -1,4 +1,18 @@
-.head{
+.container-head {
     height: 70px;
+    width: 100vw;
     background-color: black;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    .head {
+        width: 80%;
+        @include centerPosition(flex, space-between);
+        align-items:center;
+        .head-sx{
+            img{
+                height: 60px;
+            }
+        }
+    }
 }

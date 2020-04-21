@@ -12,14 +12,21 @@
     <body>
 
     <header>
-        <div class="head">
-            <select class="music-type-ajax" name="">
-                <option value="">Scegli un genere</option>
-                <option value="pop">Pop</option>
-                <option value="rock">Rock</option>
-                <option value="jazz">Jazz</option>
-                <option value="metal">Metal</option>
-            </select>
+        <div class="container-head">
+            <div class="head">
+                <div class="head-sx">
+                    <img src="img/hero.png" alt="">
+                </div>
+                <div class="head-dx">
+                    <select class="music-type-ajax" name="">
+                        <option value="">Scegli un genere</option>
+                        <option value="pop">Pop</option>
+                        <option value="rock">Rock</option>
+                        <option value="jazz">Jazz</option>
+                        <option value="metal">Metal</option>
+                    </select>
+                </div>
+            </div>
         </div>
     </header>
 
