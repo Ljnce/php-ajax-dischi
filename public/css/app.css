@@ -200,9 +200,60 @@
   margin-bottom: 10px;
 }
 
+.container-ajax .cards .card p,
+.container-ajax .cards .card-php p,
+.container-ajax .cards-php .card p,
+.container-ajax .cards-php .card-php p,
+.container-php .cards .card p,
+.container-php .cards .card-php p,
+.container-php .cards-php .card p,
+.container-php .cards-php .card-php p {
+  margin-bottom: 10px;
+}
+
 @media screen and (max-width: 768px) {
-  .container-ajax .cards {
+  .container-ajax .cards,
+  .container-ajax .cards-php,
+  .container-php .cards,
+  .container-php .cards-php {
     width: 100%;
+  }
+
+  .container-ajax .cards .card,
+  .container-ajax .cards .card-php,
+  .container-ajax .cards-php .card,
+  .container-ajax .cards-php .card-php,
+  .container-php .cards .card,
+  .container-php .cards .card-php,
+  .container-php .cards-php .card,
+  .container-php .cards-php .card-php {
+    height: 150px;
+    width: 300px;
+    flex-wrap: wrap;
+  }
+
+  .container-ajax .cards .card img,
+  .container-ajax .cards .card-php img,
+  .container-ajax .cards-php .card img,
+  .container-ajax .cards-php .card-php img,
+  .container-php .cards .card img,
+  .container-php .cards .card-php img,
+  .container-php .cards-php .card img,
+  .container-php .cards-php .card-php img {
+    height: 120px;
+    margin-bottom: 10px;
+  }
+
+  .container-ajax .cards .card h2,
+  .container-ajax .cards .card-php h2,
+  .container-ajax .cards-php .card h2,
+  .container-ajax .cards-php .card-php h2,
+  .container-php .cards .card h2,
+  .container-php .cards .card-php h2,
+  .container-php .cards-php .card h2,
+  .container-php .cards-php .card-php h2 {
+    font-size: 13px;
+    margin-bottom: 10px;
   }
 }
 

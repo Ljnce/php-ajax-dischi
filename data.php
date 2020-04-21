@@ -66,7 +66,7 @@ Creo il mio array di oggetti che mi servirà per compilare il mio index; ne creo
        ],
        [
            'poster' => 'https://upload.wikimedia.org/wikipedia/en/3/38/Queen_-_Greatest_Hits_2.png',
-           'title' => 'Queen',
+           'title' => 'Greatest hits',
            'author' => 'Queen',
            'year' => '2019',
            'value' => 'pop'

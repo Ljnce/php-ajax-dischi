@@ -103,16 +103,33 @@
             }h2 {
                 font-size: 15px;
                 margin-bottom: 10px;
-
+            }
+            p{
+                margin-bottom: 10px;
             }
         }
     }
 }
 
 @media screen and (max-width: 768px){
-    .container-ajax {
-        .cards{
+    .container-ajax,
+    .container-php {
+        .cards,
+        .cards-php{
             width: 100%;
+            .card,
+            .card-php{
+                @include size(150px, 300px);
+                flex-wrap: wrap;
+                img {
+                    height:120px;
+                    margin-bottom: 10px;
+                }h2 {
+                    font-size: 13px;
+                    margin-bottom: 10px;
+
+                }
+            }
         }
     }
 }
