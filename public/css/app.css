@@ -20,7 +20,6 @@
   background-color: black;
   display: flex;
   justify-content: center;
-  position: fixed;
 }
 
 .container-head.black {
@@ -156,7 +155,7 @@
   border: 1px solid #f28400;
   flex-direction: column;
   align-items: center;
-  background-color: black;
+  background-color: #0d0d0d;
   color: #f28400;
   margin: 20px 20px;
 }
@@ -228,7 +227,7 @@
   .container-php .cards-php .card,
   .container-php .cards-php .card-php {
     height: 150px;
-    width: 300px;
+    width: 350px;
     flex-wrap: wrap;
   }
 

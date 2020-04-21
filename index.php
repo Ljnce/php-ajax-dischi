@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Music</title>
+        <title>IronMusic</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/4cd7baf8bb.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
@@ -49,6 +49,7 @@
                     <?php foreach ($playlist_php as $key => $value) { ?>
                        <div class="card-php" data-php=" <?php echo $value['value']; ?>">
                             <img src=" <?php echo $value['poster']; ?> ">
+                            <p> &#9835;</p>
                             <h2> <?php echo $value['title']; ?> </h2>
                             <p> <?php echo $value['author']; ?> </p>
                             <small> <?php echo $value['year']; ?> </small>
@@ -82,6 +83,7 @@
         <script id="template-playlist" type="text/x-handlebars-template">
             <div class="card" data-music='{{value}}'>
                 <img src="{{img}}">
+                <p> &#9835; </p>
                 <h2> {{titolo}} </h2>
                 <p> {{autore}} </p>
                 <small> {{anno}} </small>
