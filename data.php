@@ -1,11 +1,13 @@
 
 <?php
-/* Creo il mio array di oggetti che mi servirà per compilare il mio index
-1) +++++++ Posso utilizzarlo senza server.php direttamente sull'index, richiamando il mio "data.php" con include, e ciclare li l'array che mi serve +++++++
-2) +++++++ Posso richiamrlo sul mio server.php con include, e poi passare in URL il mio server.php per ciclare il mio array ++++++
+/*
+
+Creo il mio array di oggetti che mi servirà per compilare il mio index; ne creo uno con 2 array dentro, per completare l'index con php e ajax insieme
+
 */
 
    $playlist = [
+       'ajax' => [
        [
            'poster' => 'https://www.nuovecanzoni.com/wp-content/uploads/2019/06/Jova-Beach-Party-copertina-album-jovanotti.jpg',
            'title' => 'Jova Beach Party',
@@ -42,17 +44,17 @@
            'value' => 'pop'
        ],
        [
-           'poster' => 'https://www.nuovecanzoni.com/wp-content/uploads/2019/06/Jova-Beach-Party-copertina-album-jovanotti.jpg',
-           'title' => 'Iron',
-           'author' => 'Luca',
-           'year' => '2019',
+           'poster' => 'https://i.pinimg.com/564x/45/25/17/4525179ea5a52c58be55154c934d5bd2.jpg',
+           'title' => 'Californication',
+           'author' => 'Red Hot Chili Peppers',
+           'year' => '1999',
            'value' => 'metal'
        ],
        [
-           'poster' => 'https://www.nuovecanzoni.com/wp-content/uploads/2019/06/Jova-Beach-Party-copertina-album-jovanotti.jpg',
-           'title' => 'Iron',
-           'author' => 'Luca',
-           'year' => '2019',
+           'poster' => 'https://i.pinimg.com/236x/01/c1/c5/01c1c5286c3d07545a90ab78907f437c.jpg',
+           'title' => 'By the Way',
+           'author' => 'Red Hot Chili Peppers',
+           'year' => '2001',
            'value' => 'pop'
        ],
        [
@@ -76,6 +78,24 @@
            'year' => '2019',
            'value' => 'rock'
        ]
-   ];
+   ],
+       'php' => [
+       [
+            'poster' => 'https://www.nuovecanzoni.com/wp-content/uploads/2019/06/Jova-Beach-Party-copertina-album-jovanotti.jpg',
+            'title' => 'Jova Beach Party',
+            'author' => 'Jovanotti',
+            'year' => '2019',
+            'value' => 'pop'
+        ],
+        [
+            'poster' => 'https://i.pinimg.com/564x/0e/cd/66/0ecd66de74d28ece0176caea85ef3532.jpg',
+            'title' => 'Demon Days',
+            'author' => 'Gorillaz',
+            'year' => '2005',
+            'value' => 'jazz'
+        ]
+    ],
+];
+
 
  ?>

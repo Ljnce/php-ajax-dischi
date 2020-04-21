@@ -11,34 +11,6 @@
     </head>
     <body>
 
-
-    <!-- ++++++++   Test con metodo senza utilizzo di Ajax e Server.php +++++++++ -->
-         <?php
-            include 'data.php';
-        ?>
-
-    <!-- Con ciclo foreach
-        <?php foreach ($playlist as $key => $album) { ?>
-            <div class="card">
-                <img src=" <?php echo $album['poster']; ?> ">
-                <h2> <?php echo $album['title']; ?> </h2>
-                <p> <?php echo $album['author']; ?> </p>
-                <small> <?php echo $album['year']; ?> </small>
-            </div>
-        <?php } ?> -->
-
-     <!-- Con ciclo for
-        <?php for ($i=0; $i < count($playlist) ; $i++) { ?>
-            <?php $album = $playlist[$i]; ?>
-            <div class="card">
-                <img src=" <?php echo $album['poster']; ?> ">
-                <h2> <?php echo $album['title']; ?> </h2>
-                <p> <?php echo $album['author']; ?> </p>
-                <small> <?php echo $album['year']; ?> </small>
-            </div>
-        <?php } ?> -->
-
-
     <header>
         <div class="head">
                 <select class="list-type" name="">
@@ -52,12 +24,44 @@
     </header>
 
     <main>
-        <div class="container">
+        <!-- ++++++++   Parte con metodo ajax e php +++++++++ -->
+        <div class="container-ajax">
             <div class="cards">
 
             </div>
 
         </div>
+
+        <!-- ++++++++   Parte con metodo senza utilizzo di Ajax e Server.php +++++++++ -->
+            <?php
+               include 'data.php';
+           ?>
+           <?php $playlist_php = $playlist['php']; ?>
+           <?php foreach ($playlist_php as $key => $value) { ?>
+               <div class="container-php">
+                   <div class="cards-php">
+                       <div class="card-php">
+                            <img src=" <?php echo $value['poster']; ?> ">
+                            <h2> <?php echo $value['title']; ?> </h2>
+                            <p> <?php echo $value['author']; ?> </p>
+                            <small> <?php echo $value['year']; ?> </small>
+                        </div>
+                    </div>
+                </div>
+           <?php } ?>
+
+           <!-- Alternativa con ciclo for e non foreach
+              <?php $playlist_php = $playlist['php']; ?>
+                 <?php for ($i=0; $i < count($playlist_php) ; $i++) { ?>
+                     <?php $album = $playlist_php[$i]; ?>
+                        <div class="card">
+                          <img src=" <?php echo $album['poster']; ?> ">
+                          <h2> <?php echo $album['title']; ?> </h2>
+                          <p> <?php echo $album['author']; ?> </p>
+                        <small> <?php echo $album['year']; ?> </small>
+                    </div>
+                <?php } ?> -->
+
     </main>
 
         <script id="template-playlist" type="text/x-handlebars-template">

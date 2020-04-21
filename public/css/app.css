@@ -21,7 +21,7 @@
 
 /* MAIN */
 
-.container {
+.container-ajax {
   width: 100vw;
   min-height: 100vh;
   background-color: black;
@@ -29,14 +29,14 @@
   justify-content: center;
 }
 
-.container .cards {
+.container-ajax .cards {
   width: 80%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.container .cards .card {
+.container-ajax .cards .card {
   height: 300px;
   width: 200px;
   border: 1px solid black;
@@ -49,12 +49,59 @@
   margin: 20px 20px;
 }
 
-.container .cards .card img {
+.container-ajax .cards .card:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.container-ajax .cards .card img {
   height: 150px;
   margin-bottom: 10px;
 }
 
-.container .cards .card h2 {
+.container-ajax .cards .card h2 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.container-php {
+  width: 100vw;
+  height: 400px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.container-php .cards-php {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.container-php .cards-php .card-php {
+  height: 300px;
+  width: 200px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  background-color: #f28400;
+  margin: 20px 20px;
+}
+
+.container-php .cards-php .card-php:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.container-php .cards-php .card-php img {
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.container-php .cards-php .card-php h2 {
   font-size: 15px;
   margin-bottom: 10px;
 }

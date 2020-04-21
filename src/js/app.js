@@ -6,9 +6,9 @@ $.ajax({
     method: 'GET',
     success: function(data){
         var dati = JSON.parse(data);
-        console.log(dati);
-        for (var i = 0; i < dati.length; i++) {
-            var dato = dati[i];
+        var playlistAjax = dati.ajax
+        for (var i = 0; i < playlistAjax.length; i++) {
+            var dato = playlistAjax[i];
             var infoPlaylist = {
                 img: dato.poster,
                 titolo: dato.title,
@@ -17,7 +17,7 @@ $.ajax({
                 value: dato.value
             }
             var templateFinale = template(infoPlaylist)
-            $('.container .cards').append(templateFinale);
+            $('.container-ajax .cards').append(templateFinale);
         }
     },
     error: function(){
@@ -33,7 +33,6 @@ $('.list-type').change(function(){
     } else {
         $('.card').each(function(){
         var thisMusicType = $(this).attr('data-music');
-        console.log(thisMusicType);
            if (selectedMusicType.toLowerCase() == thisMusicType.toLowerCase()) {
                 $(this).show();
             } else {
