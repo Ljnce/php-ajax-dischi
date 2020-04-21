@@ -26,7 +26,7 @@ $.ajax({
 });
 
 //Seleziona tipo di musica
-$('.list-type').change(function(){
+$('.music-type-ajax').change(function(){
     var selectedMusicType = $(this).val();
     if (selectedMusicType == "") {
         $('.card').show();

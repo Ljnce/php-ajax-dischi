@@ -10,15 +10,16 @@
         .card {
             height: 300px;
             width: 200px;
-            border: 1px solid black;
             @include centerPosition();
+            border: 1px solid #f28400;
             flex-direction: column;
             align-items: center;
-            list-style: none;
-            background-color: #f28400;
+            background-color: black;
+            color: #f28400;
             margin: 20px 20px;
             &:hover{
-                background-color: red;
+                background-color: #f28400;;
+                color: black;
                 cursor: pointer;
             }
             img {
@@ -35,24 +36,25 @@
 
 .container-php {
     width: 100vw;
-    height: 400px;
     background-color: black;
     @include centerPosition();
     .cards-php {
         width: 80%;
         @include centerPosition();
+        flex-wrap: wrap;
         .card-php {
             height: 300px;
             width: 200px;
-            border: 1px solid black;
+            border: 1px solid #f28400;
+            color: #f28400;
             @include centerPosition();
             flex-direction: column;
             align-items: center;
-            list-style: none;
-            background-color: #f28400;
+            background-color: black;
             margin: 20px 20px;
             &:hover{
-                background-color: red;
+                background-color: #f28400;;
+                color: black;
                 cursor: pointer;
             }
             img {

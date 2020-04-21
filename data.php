@@ -58,23 +58,23 @@ Creo il mio array di oggetti che mi servirà per compilare il mio index; ne creo
            'value' => 'pop'
        ],
        [
-           'poster' => 'https://www.nuovecanzoni.com/wp-content/uploads/2019/06/Jova-Beach-Party-copertina-album-jovanotti.jpg',
-           'title' => 'Iron',
-           'author' => 'Luca',
-           'year' => '2019',
+           'poster' => 'https://img.discogs.com/h4xDjKb48-XAsRotrqHy29Ls4Sw=/fit-in/600x588/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6010687-1483451906-5345.jpeg.jpg',
+           'title' => 'Awesome Mix vol 1',
+           'author' => 'Guardians of Galaxy',
+           'year' => '2017',
            'value' => 'rock'
        ],
        [
-           'poster' => 'https://www.nuovecanzoni.com/wp-content/uploads/2019/06/Jova-Beach-Party-copertina-album-jovanotti.jpg',
-           'title' => 'Iron',
-           'author' => 'Luca',
+           'poster' => 'https://upload.wikimedia.org/wikipedia/en/3/38/Queen_-_Greatest_Hits_2.png',
+           'title' => 'Queen',
+           'author' => 'Queen',
            'year' => '2019',
            'value' => 'pop'
        ],
        [
-           'poster' => 'https://www.nuovecanzoni.com/wp-content/uploads/2019/06/Jova-Beach-Party-copertina-album-jovanotti.jpg',
-           'title' => 'Iron',
-           'author' => 'Luca',
+           'poster' => 'https://alessandrogirola.files.wordpress.com/2013/02/blood-on-the-dance-floor_michael-jackson.jpg',
+           'title' => 'Blood of the Dance Floor',
+           'author' => 'Michael Jackson',
            'year' => '2019',
            'value' => 'rock'
        ]
@@ -85,7 +85,7 @@ Creo il mio array di oggetti che mi servirà per compilare il mio index; ne creo
             'title' => 'Jova Beach Party',
             'author' => 'Jovanotti',
             'year' => '2019',
-            'value' => 'pop'
+            'value' => 'metal'
         ],
         [
             'poster' => 'https://i.pinimg.com/564x/0e/cd/66/0ecd66de74d28ece0176caea85ef3532.jpg',
@@ -93,6 +93,13 @@ Creo il mio array di oggetti che mi servirà per compilare il mio index; ne creo
             'author' => 'Gorillaz',
             'year' => '2005',
             'value' => 'jazz'
+        ],
+        [
+            'poster' => 'https://img.discogs.com/h4xDjKb48-XAsRotrqHy29Ls4Sw=/fit-in/600x588/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6010687-1483451906-5345.jpeg.jpg',
+            'title' => 'Awesome Mix vol 1',
+            'author' => 'Guardians of Galaxy',
+            'year' => '2017',
+            'value' => 'rock'
         ]
     ],
 ];

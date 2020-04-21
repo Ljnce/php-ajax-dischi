@@ -39,18 +39,19 @@
 .container-ajax .cards .card {
   height: 300px;
   width: 200px;
-  border: 1px solid black;
   display: flex;
   justify-content: center;
+  border: 1px solid #f28400;
   flex-direction: column;
   align-items: center;
-  list-style: none;
-  background-color: #f28400;
+  background-color: black;
+  color: #f28400;
   margin: 20px 20px;
 }
 
 .container-ajax .cards .card:hover {
-  background-color: red;
+  background-color: #f28400;
+  color: black;
   cursor: pointer;
 }
 
@@ -66,7 +67,6 @@
 
 .container-php {
   width: 100vw;
-  height: 400px;
   background-color: black;
   display: flex;
   justify-content: center;
@@ -76,23 +76,25 @@
   width: 80%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .container-php .cards-php .card-php {
   height: 300px;
   width: 200px;
-  border: 1px solid black;
+  border: 1px solid #f28400;
+  color: #f28400;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  list-style: none;
-  background-color: #f28400;
+  background-color: black;
   margin: 20px 20px;
 }
 
 .container-php .cards-php .card-php:hover {
-  background-color: red;
+  background-color: #f28400;
+  color: black;
   cursor: pointer;
 }
 
