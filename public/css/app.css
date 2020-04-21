@@ -51,51 +51,79 @@
 
 /* MAIN */
 
+/*
 .container-ajax {
-  width: 100vw;
-  background-color: black;
-  display: flex;
-  justify-content: center;
+    width: 100vw;
+    background-color: black;
+    @include centerPosition();
+    .cards {
+        width: 80%;
+        @include centerPosition();
+        flex-wrap: wrap;
+        .card {
+            @include size();
+            @include centerPosition();
+            border: 1px solid $primary_color;
+            flex-direction: column;
+            align-items: center;
+            background-color: black;
+            color: $primary_color;
+            margin: 20px 20px;
+            &:hover{
+                background-color: $primary_color;
+                color: black;
+                color: white;
+                border-color: white;
+                cursor: pointer;
+            }
+            img {
+                height:180px;
+                margin-bottom: 10px;
+            }h2 {
+                font-size: 15px;
+                margin-bottom: 10px;
+
+            }
+        }
+    }
 }
 
-.container-ajax .cards {
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.container-php {
+    width: 100vw;
+    background-color: black;
+    @include centerPosition();
+    .cards-php {
+        width: 80%;
+        @include centerPosition();
+        flex-wrap: wrap;
+        .card-php {
+            @include size();
+            border: 1px solid $primary_color;
+            color: $primary_color;
+            @include centerPosition();
+            flex-direction: column;
+            align-items: center;
+            background-color: black;
+            margin: 20px 20px;
+            &:hover{
+                background-color: $primary_color;
+                color: white;
+                border-color: white;
+                cursor: pointer;
+            }
+            img {
+                height:180px;
+                margin-bottom: 10px;
+            }h2 {
+                font-size: 15px;
+                margin-bottom: 10px;
+            }
+        }
+    }
 }
+*/
 
-.container-ajax .cards .card {
-  height: 300px;
-  width: 200px;
-  display: flex;
-  justify-content: center;
-  border: 1px solid #f28400;
-  flex-direction: column;
-  align-items: center;
-  background-color: black;
-  color: #f28400;
-  margin: 20px 20px;
-}
-
-.container-ajax .cards .card:hover {
-  background-color: #f28400;
-  color: black;
-  color: white;
-  border-color: white;
-  cursor: pointer;
-}
-
-.container-ajax .cards .card img {
-  height: 150px;
-  margin-bottom: 10px;
-}
-
-.container-ajax .cards .card h2 {
-  font-size: 15px;
-  margin-bottom: 10px;
-}
-
+.container-ajax,
 .container-php {
   width: 100vw;
   background-color: black;
@@ -103,6 +131,9 @@
   justify-content: center;
 }
 
+.container-ajax .cards,
+.container-ajax .cards-php,
+.container-php .cards,
 .container-php .cards-php {
   width: 80%;
   display: flex;
@@ -110,35 +141,82 @@
   flex-wrap: wrap;
 }
 
+.container-ajax .cards .card,
+.container-ajax .cards .card-php,
+.container-ajax .cards-php .card,
+.container-ajax .cards-php .card-php,
+.container-php .cards .card,
+.container-php .cards .card-php,
+.container-php .cards-php .card,
 .container-php .cards-php .card-php {
   height: 300px;
   width: 200px;
-  border: 1px solid #f28400;
-  color: #f28400;
   display: flex;
   justify-content: center;
+  border: 1px solid #f28400;
   flex-direction: column;
   align-items: center;
   background-color: black;
+  color: #f28400;
   margin: 20px 20px;
 }
 
+.container-ajax .cards .card:hover,
+.container-ajax .cards .card-php:hover,
+.container-ajax .cards-php .card:hover,
+.container-ajax .cards-php .card-php:hover,
+.container-php .cards .card:hover,
+.container-php .cards .card-php:hover,
+.container-php .cards-php .card:hover,
 .container-php .cards-php .card-php:hover {
   background-color: #f28400;
+  color: black;
   color: white;
   border-color: white;
   cursor: pointer;
 }
 
+.container-ajax .cards .card img,
+.container-ajax .cards .card-php img,
+.container-ajax .cards-php .card img,
+.container-ajax .cards-php .card-php img,
+.container-php .cards .card img,
+.container-php .cards .card-php img,
+.container-php .cards-php .card img,
 .container-php .cards-php .card-php img {
-  height: 150px;
+  height: 180px;
   margin-bottom: 10px;
 }
 
+.container-ajax .cards .card h2,
+.container-ajax .cards .card-php h2,
+.container-ajax .cards-php .card h2,
+.container-ajax .cards-php .card-php h2,
+.container-php .cards .card h2,
+.container-php .cards .card-php h2,
+.container-php .cards-php .card h2,
 .container-php .cards-php .card-php h2 {
   font-size: 15px;
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .container-ajax .cards {
+    width: 100%;
+  }
+}
+
 /* FOOTER */
+
+.container-foot {
+  height: 70px;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.container-foot .image-footer {
+  height: 60px;
+}
 

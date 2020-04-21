@@ -1,0 +1,9 @@
+.container-foot {
+    @include size(70px, 100vw);
+    background-color: black;
+    display: flex;
+    justify-content: center;
+        .image-footer{
+            height: 60px;
+        }
+    }

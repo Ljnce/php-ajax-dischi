@@ -71,6 +71,14 @@
 
     </main>
 
+    <footer>
+        <div class="container-foot">
+            <div class="foot">
+                <img class="image-footer" src="img/hero.png" alt="">
+            </div>
+        </div>
+    </footer>
+
         <script id="template-playlist" type="text/x-handlebars-template">
             <div class="card" data-music='{{value}}'>
                 <img src="{{img}}">
