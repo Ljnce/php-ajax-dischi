@@ -6,7 +6,7 @@ o l'append, sul mio index.php
  */
 
     include 'data.php'; //Importo i datiche mi servono (array);
-    header('Content-Type = application/json'); //Trasformo in un json;
+    header('Content-Type: application/json'); //Trasformo in un json;
     echo json_encode($playlist); //Lo stampo alla chiamata /server.php codificato in json
 
  ?>

@@ -42,7 +42,7 @@
         <!-- ++++++++   Parte con metodo senza utilizzo di Ajax e Server.php +++++++++ -->
             <?php
                include 'data.php';
-           ?>
+            ?>
            <div class="container-php">
                 <div class="cards-php">
                     <?php $playlist_php = $playlist['php']; ?>
